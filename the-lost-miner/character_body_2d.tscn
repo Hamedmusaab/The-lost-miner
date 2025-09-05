@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://5fd677jqhxpc"]
+
+[ext_resource type="Texture2D" uid="uid://du3jon0jtuhe3" path="res://Assets/sprites/palyer/AL MODDER shovel.png" id="1_f50pn"]
+[ext_resource type="Script" uid="uid://cn7p20vxxqy14" path="res://character_body_2d.gd" id="1_ij6vw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ij6vw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_f50pn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ghijl"]
+radius = 6.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_ij6vw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_ij6vw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -15)
+shape = SubResource("CapsuleShape2D_ghijl")
