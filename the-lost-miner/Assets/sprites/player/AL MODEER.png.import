@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hdx126ack3sy"
-path="res://.godot/imported/AL MODEER pickaxe.png-02189fe53310ade9436914f9f4c9325d.ctex"
+uid="uid://cnvy3lidna4qd"
+path="res://.godot/imported/AL MODEER.png-6561eff4c798a486c0b40cc5d430fff0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/palyer/AL MODEER pickaxe.png"
-dest_files=["res://.godot/imported/AL MODEER pickaxe.png-02189fe53310ade9436914f9f4c9325d.ctex"]
+source_file="res://Assets/sprites/player/AL MODEER.png"
+dest_files=["res://.godot/imported/AL MODEER.png-6561eff4c798a486c0b40cc5d430fff0.ctex"]
 
 [params]
 

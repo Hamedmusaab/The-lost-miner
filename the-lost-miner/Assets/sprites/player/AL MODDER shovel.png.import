@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnvy3lidna4qd"
-path="res://.godot/imported/AL MODEER.png-e86a4fe7c1ec84028f54a83779d6fd49.ctex"
+uid="uid://du3jon0jtuhe3"
+path="res://.godot/imported/AL MODDER shovel.png-4eece33d3fa0cd19980199a274ea7319.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/palyer/AL MODEER.png"
-dest_files=["res://.godot/imported/AL MODEER.png-e86a4fe7c1ec84028f54a83779d6fd49.ctex"]
+source_file="res://Assets/sprites/player/AL MODDER shovel.png"
+dest_files=["res://.godot/imported/AL MODDER shovel.png-4eece33d3fa0cd19980199a274ea7319.ctex"]
 
 [params]
 
