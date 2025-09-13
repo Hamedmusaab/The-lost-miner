@@ -13,7 +13,10 @@ config_version=5
 config/name="the lost miner"
 run/main_scene="uid://c3jh5ix6ts0r6"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+
+[global_group]
+
+player=""
 
 [rendering]
 
