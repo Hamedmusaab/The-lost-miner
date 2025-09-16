@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvv0kq6h8t8oh"
-path="res://.godot/imported/mashromm pink mini boss.png-0977acfacac73e6bec56526ffe07b4ab.ctex"
+uid="uid://bn6vrpo6ovv0m"
+path="res://.godot/imported/big-boss-level-2.png-83c3374dcc27e874958e2619c7563cb3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies-level-1/mashromm pink mini boss.png"
-dest_files=["res://.godot/imported/mashromm pink mini boss.png-0977acfacac73e6bec56526ffe07b4ab.ctex"]
+source_file="res://Assets/sprites/boss-level-2/big-boss-level-2.png"
+dest_files=["res://.godot/imported/big-boss-level-2.png-83c3374dcc27e874958e2619c7563cb3.ctex"]
 
 [params]
 
