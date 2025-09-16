@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7cfexem0dm8q"]
+
+[ext_resource type="Texture2D" uid="uid://evhg1g2ofmsy" path="res://Assets/sprites/boss-level-2/Sprite-0003.png" id="1_ywt2v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_grfs8"]
+atlas = ExtResource("1_ywt2v")
+region = Rect2(0, 108, 71, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bohgd"]
+atlas = ExtResource("1_ywt2v")
+region = Rect2(71, 108, 71, 108)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbg8h"]
+atlas = ExtResource("1_ywt2v")
+region = Rect2(142, 108, 71, 108)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1om10"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_grfs8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bohgd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbg8h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.7
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3.25, -7)
+scale = Vector2(1.09155, 1.12963)
+sprite_frames = SubResource("SpriteFrames_1om10")
+autoplay = "default"
+frame_progress = 0.716284
