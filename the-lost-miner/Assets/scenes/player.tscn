@@ -1,17 +1,35 @@
-[gd_scene load_steps=5 format=3 uid="uid://5fd677jqhxpc"]
+[gd_scene load_steps=8 format=3 uid="uid://5fd677jqhxpc"]
 
-[ext_resource type="Texture2D" uid="uid://du3jon0jtuhe3" path="res://Assets/sprites/player/AL MODDER shovel.png" id="1_f50pn"]
 [ext_resource type="Script" uid="uid://cn7p20vxxqy14" path="res://Assets/script/player.gd" id="1_ij6vw"]
+[ext_resource type="Texture2D" uid="uid://s78x2rd00v3j" path="res://Assets/sprites/player/All pics animation.png" id="2_2ockf"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ij6vw"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7fmp"]
+atlas = ExtResource("2_2ockf")
+region = Rect2(0, 0, 33, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7gl8"]
+atlas = ExtResource("2_2ockf")
+region = Rect2(33, 0, 33, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hn2yh"]
+atlas = ExtResource("2_2ockf")
+region = Rect2(66, 0, 33, 44)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_50d87"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_f50pn")
+"texture": SubResource("AtlasTexture_n7fmp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7gl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hn2yh")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 6.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ghijl"]
@@ -21,9 +39,11 @@ radius = 6.0
 script = ExtResource("1_ij6vw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -16)
-sprite_frames = SubResource("SpriteFrames_ij6vw")
+position = Vector2(0, -10)
+sprite_frames = SubResource("SpriteFrames_50d87")
+autoplay = "default"
+frame_progress = 0.763753
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -15)
+position = Vector2(-1, -15)
 shape = SubResource("CapsuleShape2D_ghijl")
