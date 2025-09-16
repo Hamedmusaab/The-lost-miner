@@ -111,12 +111,14 @@ motion_scale = Vector2(0.5, 1)
 motion_mirroring = Vector2(1290, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background/Layer"]
-position = Vector2(276, -125)
+position = Vector2(276, -133)
 scale = Vector2(0.507422, 0.316)
 texture = ExtResource("3_lquwl")
 
 [node name="Player" parent="." instance=ExtResource("3_1bvp3")]
+position = Vector2(160, -1)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -12)
 zoom = Vector2(3.5, 3.5)
+process_callback = 0
