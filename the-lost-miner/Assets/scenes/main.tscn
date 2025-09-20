@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c3jh5ix6ts0r6"]
+[gd_scene load_steps=11 format=3 uid="uid://beq05aumc2tqj"]
 
 [ext_resource type="Texture2D" uid="uid://cd3nid3daorhy" path="res://Assets/sprites/level1-blocks-design/level-1-blocks.png" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://c2c8fkj1yis2q" path="res://Assets/sprites/level2-blocks-design/level-2-blocks.png" id="2_0w22r"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c17paa412hlsf"
-path="res://.godot/imported/blue mashroom mini boss.png-1ce0031f664f8a52c9fa472423e934b8.ctex"
+uid="uid://dhflgrlv11pwn"
+path="res://.godot/imported/mashroom mini boss2.png-24c71b413948d0abfa554d7a60ffcd5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/enemies-level-1/blue mashroom mini boss.png"
-dest_files=["res://.godot/imported/blue mashroom mini boss.png-1ce0031f664f8a52c9fa472423e934b8.ctex"]
+source_file="res://Assets/sprites/enemies-level-1/mashroom mini boss2.png"
+dest_files=["res://.godot/imported/mashroom mini boss2.png-24c71b413948d0abfa554d7a60ffcd5b.ctex"]
 
 [params]
 
