@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://bq88p82qnqfks"]
+
+[ext_resource type="Texture2D" path="res://Assets/sprites/enemies-level-1/min-boss-level-1.png" id="1_psyn6"]
+[ext_resource type="Script" path="res://Assets/script/mashroom_2.gd" id="1_s3rxl"]
+[ext_resource type="PackedScene" uid="uid://ddsvci82hhllc" path="res://Assets/scenes/kill_zone.tscn" id="2_s3rxl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0nfk"]
+atlas = ExtResource("1_psyn6")
+region = Rect2(96, 33, 31, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kelol"]
+atlas = ExtResource("1_psyn6")
+region = Rect2(160, 33, 31, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itutb"]
+atlas = ExtResource("1_psyn6")
+region = Rect2(128, 33, 31, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qpqfq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0nfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kelol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itutb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gytel"]
+radius = 8.0
+height = 24.0
+
+[node name="mashroom-2" type="Node2D"]
+script = ExtResource("1_s3rxl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qpqfq")
+autoplay = "default"
+frame_progress = 0.21241
+
+[node name="kill-zone" parent="AnimatedSprite2D" instance=ExtResource("2_s3rxl")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/kill-zone"]
+position = Vector2(-1, -2)
+shape = SubResource("CapsuleShape2D_gytel")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(17, 0)
+
+[node name="RayCast2D2" type="RayCast2D" parent="."]
+target_position = Vector2(-18, 0)
+collision_mask = 9
