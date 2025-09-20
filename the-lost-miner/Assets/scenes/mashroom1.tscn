@@ -1,19 +1,19 @@
 [gd_scene load_steps=10 format=3 uid="uid://bsdcna5ap227x"]
 
-[ext_resource type="Script" uid="uid://bxlil4wwvk8tc" path="res://Assets/script/mashroom.gd" id="1_jmwxj"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/enemies-level-1/min-boss-level-1.png" id="1_nbgli"]
-[ext_resource type="PackedScene" uid="uid://ddsvci82hhllc" path="res://Assets/scenes/kill_zone.tscn" id="2_fqe31"]
+[ext_resource type="Script" uid="uid://bxlil4wwvk8tc" path="res://Assets/script/mashroom.gd" id="1_37jhc"]
+[ext_resource type="Texture2D" uid="uid://m3g2avdmfab1" path="res://Assets/sprites/enemies-level-1/min-boss-level-1.png" id="2_y7k6r"]
+[ext_resource type="PackedScene" uid="uid://ddsvci82hhllc" path="res://Assets/scenes/kill_zone.tscn" id="3_3lctn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jmwxj"]
-atlas = ExtResource("1_nbgli")
+atlas = ExtResource("2_y7k6r")
 region = Rect2(0, 0, 32, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_784ek"]
-atlas = ExtResource("1_nbgli")
+atlas = ExtResource("2_y7k6r")
 region = Rect2(32, 0, 32, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_752fa"]
-atlas = ExtResource("1_nbgli")
+atlas = ExtResource("2_y7k6r")
 region = Rect2(64, 0, 32, 33)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_32ioy"]
@@ -42,7 +42,7 @@ radius = 7.0
 height = 28.0
 
 [node name="mashroom" type="Node2D"]
-script = ExtResource("1_jmwxj")
+script = ExtResource("1_37jhc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(2, -3)
@@ -52,7 +52,7 @@ autoplay = "default"
 frame_progress = 0.550595
 script = SubResource("GDScript_fqe31")
 
-[node name="kill-zone" parent="AnimatedSprite2D" instance=ExtResource("2_fqe31")]
+[node name="kill-zone" parent="AnimatedSprite2D" instance=ExtResource("3_3lctn")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/kill-zone"]
 position = Vector2(-1.93939, -3)
