@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bsdcna5ap227x"]
 
-[ext_resource type="Script" path="res://Assets/script/mashroom.gd" id="1_jmwxj"]
+[ext_resource type="Script" uid="uid://bxlil4wwvk8tc" path="res://Assets/script/mashroom.gd" id="1_jmwxj"]
 [ext_resource type="Texture2D" path="res://Assets/sprites/enemies-level-1/min-boss-level-1.png" id="1_nbgli"]
 [ext_resource type="PackedScene" uid="uid://ddsvci82hhllc" path="res://Assets/scenes/kill_zone.tscn" id="2_fqe31"]
 
