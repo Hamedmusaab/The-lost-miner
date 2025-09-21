@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c70oo4tye53hf"
-path="res://.godot/imported/big-boss-level-4.png-92d28dfec02b66503103ec1dc2f50fb8.ctex"
+uid="uid://c2ule1oeydvwk"
+path="res://.godot/imported/attack.png-7a2a87055fc9938976a592233051f1d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/boss-level-2/big-boss-level-4.png"
-dest_files=["res://.godot/imported/big-boss-level-4.png-92d28dfec02b66503103ec1dc2f50fb8.ctex"]
+source_file="res://Assets/sprites/boss-level-2/attack.png"
+dest_files=["res://.godot/imported/attack.png-7a2a87055fc9938976a592233051f1d1.ctex"]
 
 [params]
 

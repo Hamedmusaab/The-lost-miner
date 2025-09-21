@@ -1,0 +1,142 @@
+[gd_scene load_steps=8 format=3 uid="uid://6kjluud2jdix"]
+
+[ext_resource type="Texture2D" uid="uid://dyxn3gamwwgk8" path="res://Assets/sprites/boss-level-2/Sprite-0003.png" id="1_oa787"]
+[ext_resource type="Texture2D" uid="uid://c2ule1oeydvwk" path="res://Assets/sprites/boss-level-2/attack.png" id="2_8r5fd"]
+
+[sub_resource type="Animation" id="Animation_by2s8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("piovt/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_6e588"]
+resource_name = "mother of grups"
+length = 0.375012
+loop_mode = 2
+step = 0.125
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_qxo51"]
+resource_name = "slimy"
+length = 1.87501
+loop_mode = 1
+step = 0.125
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("piovt/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1, 1.125, 1.25001, 1.375, 1.5, 1.625, 1.75),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 0, 2, 3, 4, 0, 1, 2, 3, 4, 0]
+}
+
+[sub_resource type="Animation" id="Animation_oa787"]
+resource_name = "new_animation"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_l83wf"]
+_data = {
+&"RESET": SubResource("Animation_by2s8"),
+&"mother of grups": SubResource("Animation_6e588"),
+&"new_animation": SubResource("Animation_oa787"),
+&"slimy": SubResource("Animation_qxo51")
+}
+
+[node name="mother of grups" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_oa787")
+hframes = 3
+
+[node name="piovt" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="piovt"]
+position = Vector2(-33, 71)
+scale = Vector2(1.5625, 1.5625)
+texture = ExtResource("2_8r5fd")
+hframes = 8
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_l83wf")
+}
+autoplay = "mother of grups"
+
+[node name="ui" type="CanvasLayer" parent="."]
+
+[node name="ProgressBar" type="ProgressBar" parent="ui"]
+visible = false
+custom_minimum_size = Vector2(200, 0)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -169.0
+offset_right = 104.0
+offset_bottom = -142.0
+grow_vertical = 2
+value = 100.0
+
+[node name="Label" type="Label" parent="ui/ProgressBar"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -99.0
+offset_top = -19.0
+offset_right = 101.0
+offset_bottom = 4.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 8
+text = "Mother of grups"
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="ui"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -594.0
+offset_top = -204.0
+offset_right = -554.0
+offset_bottom = -181.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "MOG boss"

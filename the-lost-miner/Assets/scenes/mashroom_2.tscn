@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bq88p82qnqfks"]
 
-[ext_resource type="Texture2D" path="res://Assets/sprites/enemies-level-1/min-boss-level-1.png" id="1_psyn6"]
-[ext_resource type="Script" path="res://Assets/script/mashroom_2.gd" id="1_s3rxl"]
+[ext_resource type="Texture2D" uid="uid://bo8y30clkgi2i" path="res://Assets/sprites/enemies-level-1/min-boss-level-1.png" id="1_psyn6"]
+[ext_resource type="Script" uid="uid://jfaa0f0rncug" path="res://Assets/script/mashroom_2.gd" id="1_s3rxl"]
 [ext_resource type="PackedScene" uid="uid://ddsvci82hhllc" path="res://Assets/scenes/kill_zone.tscn" id="2_s3rxl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f0nfk"]

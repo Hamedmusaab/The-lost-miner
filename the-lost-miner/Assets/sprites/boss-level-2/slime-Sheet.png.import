@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg8vng84yupbr"
-path="res://.godot/imported/big-boss-level-3.png-f8e7d284fc8b5edb37802d3d19fb2584.ctex"
+uid="uid://c2lhvwru361rk"
+path="res://.godot/imported/slime-Sheet.png-22730adf98dcd0eb877479f6bce1a1d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/sprites/boss-level-2/big-boss-level-3.png"
-dest_files=["res://.godot/imported/big-boss-level-3.png-f8e7d284fc8b5edb37802d3d19fb2584.ctex"]
+source_file="res://Assets/sprites/boss-level-2/slime-Sheet.png"
+dest_files=["res://.godot/imported/slime-Sheet.png-22730adf98dcd0eb877479f6bce1a1d3.ctex"]
 
 [params]
 
