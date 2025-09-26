@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://5fd677jqhxpc"]
+[gd_scene load_steps=4 format=3 uid="uid://5fd677jqhxpc"]
 
 [ext_resource type="Texture2D" uid="uid://du3jon0jtuhe3" path="res://Assets/sprites/player/AL MODDER shovel.png" id="1_f50pn"]
-[ext_resource type="Script" uid="uid://cn7p20vxxqy14" path="res://Assets/script/player.gd" id="1_ij6vw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ij6vw"]
 animations = [{
@@ -18,7 +17,6 @@ animations = [{
 radius = 6.0
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
-script = ExtResource("1_ij6vw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
