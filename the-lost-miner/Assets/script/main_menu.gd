@@ -5,7 +5,7 @@ func _on_start_pressed() -> void:
 
 
 func _on_credit_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Assets/scenes/credit.tscn")
 
 
 func _on_quit_pressed() -> void:
