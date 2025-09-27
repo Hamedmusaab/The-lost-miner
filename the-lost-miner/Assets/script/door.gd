@@ -11,3 +11,10 @@ func _on_trigger_player_entered() -> void:
 	await(get_tree().create_timer(1.3))
 	$AnimationPlayer.play("Closed")
 	emit_signal("isClosed")
+
+
+func _on_trigger_2_player_entered() -> void:
+	$AnimationPlayer.play("Active")
+	await(get_tree().create_timer(1.3))
+	$AnimationPlayer.play("Closed")
+	emit_signal("isClosed")
