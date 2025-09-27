@@ -15,6 +15,10 @@ run/main_scene="uid://cmv3bsew3ppf0"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Muisc="*res://Assets/scenes/muisc.tscn"
+
 [global_group]
 
 player=""

@@ -46,9 +46,9 @@ func handle_animation():
 	var anim_sprite = $AnimatedSprite2D
 	if !dead and !taking_damage and !is_dealing_damage:
 		anim_sprite.play("walk")
-		if dir.x == -1:
+		if dir.x == 1:
 			anim_sprite.flip_h = true
-		elif dir.x == 1:
+		elif dir.x == -1:
 			anim_sprite.flip_h = false
 	elif !dead and taking_damage and !is_dealing_damage:
 		anim_sprite.play("hurt")
@@ -66,7 +66,7 @@ func handle_death():
 func _on_direction_timer_timeout() -> void:
 	$DirectionTimer.wait_time = choose([1.5,2.0,2.5])
 	if !is_slime_chase:
-		dir = choose([Vector2.RIGHT, Vector2.LEFT])
+		dir = choose([Vector2.LEFT, Vector2.RIGHT])
 		velocity.x = 0
 
 
