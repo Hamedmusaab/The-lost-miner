@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://cdjlrrhiavlkm"]
+[gd_scene load_steps=36 format=3 uid="uid://cdjlrrhiavlkm"]
 
 [ext_resource type="Texture2D" uid="uid://cd3nid3daorhy" path="res://Assets/sprites/level1-blocks-design/level-1-blocks.png" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://c2c8fkj1yis2q" path="res://Assets/sprites/level2-blocks-design/level-2-blocks.png" id="2_0w22r"]
@@ -19,14 +19,13 @@
 [ext_resource type="PackedScene" uid="uid://b8x2h5mfminjy" path="res://Assets/scenes/door2.tscn" id="17_mp44c"]
 [ext_resource type="PackedScene" uid="uid://dpwik30noil0j" path="res://Assets/scenes/pause_menu.tscn" id="18_o4lry"]
 [ext_resource type="FontFile" uid="uid://di7j663v0l5tj" path="res://Assets/fonts/Super Trend.ttf" id="19_ki16a"]
-[ext_resource type="AudioStream" path="res://Assets/audio/cosmos-galaxy-stars-universe-milky-way-planet-ambient-music-208619.mp3" id="21_tyd0r"]
-[ext_resource type="AudioStream" path="res://Assets/audio/desert-serenade-211947.mp3" id="22_2bmgd"]
-[ext_resource type="PackedScene" path="res://Assets/scenes/mother_of_grups.tscn" id="22_05vck"]
 [ext_resource type="PackedScene" uid="uid://bsdcna5ap227x" path="res://Assets/scenes/mashroom1.tscn" id="23_05vck"]
-[ext_resource type="PackedScene" path="res://Assets/scenes/small_dragon.tscn" id="24_3vfcy"]
+[ext_resource type="PackedScene" uid="uid://dqkj17hx8b7d6" path="res://Assets/scenes/small_dragon.tscn" id="24_3vfcy"]
 [ext_resource type="PackedScene" uid="uid://c0uqtxcom5xvy" path="res://Assets/scenes/dragon.tscn" id="25_rpo6x"]
 [ext_resource type="PackedScene" uid="uid://bj6vv1b33vj8b" path="res://Assets/scenes/mashromm_3.tscn" id="26_q2k1h"]
+[ext_resource type="PackedScene" uid="uid://dfj7ut78ijtj1" path="res://Assets/scenes/motther_of_grups.tscn" id="26_uguyd"]
 [ext_resource type="PackedScene" uid="uid://bq88p82qnqfks" path="res://Assets/scenes/mashroom_2.tscn" id="27_uguyd"]
+[ext_resource type="AudioStream" uid="uid://k8u7e41xp876" path="res://Assets/audio/deep-sea-exploration-7399.mp3" id="27_yyqir"]
 [ext_resource type="PackedScene" uid="uid://ja6cslydd2ot" path="res://Assets/scenes/slime.tscn" id="28_yyqir"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
@@ -2583,7 +2582,7 @@ layer_0/tile_data = PackedInt32Array(65531, 65536, 0, 65532, 65536, 0, 65533, 65
 
 [node name="Player" parent="." instance=ExtResource("3_1bvp3")]
 texture_filter = 1
-position = Vector2(3980, -1007)
+position = Vector2(3549, -3)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -12)
@@ -2724,7 +2723,7 @@ rotation = -3.14159
 position = Vector2(2.99994, -17)
 
 [node name="DestnationPoint" parent="portals/portal2" index="2"]
-position = Vector2(-483.002, -888.999)
+position = Vector2(-508.002, -882.999)
 
 [node name="portal3" parent="portals" instance=ExtResource("6_cea21")]
 position = Vector2(8651, -1102)
@@ -2900,10 +2899,10 @@ text = "LEFT MOUSE CLICK
 modulate = Color(0.352941, 0.556863, 0.196078, 1)
 texture_filter = 2
 material = SubResource("ShaderMaterial_yw1u4")
-offset_left = 3559.0
+offset_left = 3560.0
 offset_top = -51.0
-offset_right = 3670.0
-offset_bottom = 38.0
+offset_right = 3667.0
+offset_bottom = -31.0
 theme_override_fonts/font = ExtResource("19_ki16a")
 text = "SlimyGround  "
 
@@ -2924,20 +2923,26 @@ text = "SKELTOPIA"
 
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(5155, -1536)
-stream = ExtResource("21_tyd0r")
 autoplay = true
 max_distance = 3300.0
-bus = &"music 2"
 
 [node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(11660, -3448)
-stream = ExtResource("22_2bmgd")
 autoplay = true
 max_distance = 4096.0
-bus = &"music 3"
 
-[node name="MotherOf Grups" parent="." instance=ExtResource("22_05vck")]
+[node name="MotherOf Grups" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(7993, -1156)
+script = null
 
 [node name="SmallDragon" parent="." instance=ExtResource("24_3vfcy")]
 position = Vector2(11107, -2398)
@@ -2968,6 +2973,22 @@ position = Vector2(4760, -971)
 
 [node name="slime3" parent="." instance=ExtResource("28_yyqir")]
 position = Vector2(4248, -980)
+
+[node name="MottherOfGrups" parent="." instance=ExtResource("26_uguyd")]
+position = Vector2(8061, -1140)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(323, -315)
+stream = ExtResource("27_yyqir")
+autoplay = true
+max_distance = 3363.0
+bus = &"music"
+
+[node name="AudioStreamPlayer2D4" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(103, -101)
+
+[node name="AudioStreamPlayer2D5" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(155, -69)
 
 [connection signal="PlayerEntered" from="Triggers/Trigger1" to="Doors/Door" method="_on_trigger_player_entered"]
 [connection signal="PlayerEntered" from="Triggers/Trigger1" to="Doors/Door2" method="_on_trigger_player_entered"]

@@ -1,22 +1,21 @@
-[gd_scene load_steps=36 format=3 uid="uid://dqkj17hx8b7d6"]
+[gd_scene load_steps=35 format=3 uid="uid://dqkj17hx8b7d6"]
 
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Attack1.png" id="1_gy5ho"]
-[ext_resource type="Script" path="res://Assets/script/small_dragon.gd" id="1_m6aps"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Attack2.png" id="2_m6aps"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Attack3.png" id="3_fy1pk"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Death1.png" id="4_4cjjc"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Death2.png" id="5_tj8yl"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Death3.png" id="6_1fvhc"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Death4.png" id="7_77ocx"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Hurt1.png" id="8_qfapc"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Hurt2.png" id="9_ngyra"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Idle1.png" id="10_lg8af"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Idle2.png" id="11_s8yq4"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Idle3.png" id="12_i2r41"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Walk1.png" id="13_ul117"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Walk2.png" id="14_5qqs8"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Walk3.png" id="15_03jac"]
-[ext_resource type="Texture2D" path="res://Assets/sprites/small_dragon/Walk4.png" id="16_cfjob"]
+[ext_resource type="Texture2D" uid="uid://cnhfel2mu761h" path="res://Assets/sprites/smalldragon/Attack1.png" id="1_gy5ho"]
+[ext_resource type="Texture2D" uid="uid://f1jcgj6mb1vd" path="res://Assets/sprites/smalldragon/Attack2.png" id="2_m6aps"]
+[ext_resource type="Texture2D" uid="uid://d3hab2xi0ekf3" path="res://Assets/sprites/smalldragon/Attack3.png" id="3_fy1pk"]
+[ext_resource type="Texture2D" uid="uid://dra2vc8tfye1" path="res://Assets/sprites/smalldragon/Death1.png" id="4_4cjjc"]
+[ext_resource type="Texture2D" uid="uid://b674xjncpg5mi" path="res://Assets/sprites/smalldragon/Death2.png" id="5_tj8yl"]
+[ext_resource type="Texture2D" uid="uid://bftxlar1vnvi4" path="res://Assets/sprites/smalldragon/Death3.png" id="6_1fvhc"]
+[ext_resource type="Texture2D" uid="uid://chgwgqndtmv0d" path="res://Assets/sprites/smalldragon/Death4.png" id="7_77ocx"]
+[ext_resource type="Texture2D" uid="uid://bs6hr5g4wjvgt" path="res://Assets/sprites/smalldragon/Hurt1.png" id="8_qfapc"]
+[ext_resource type="Texture2D" uid="uid://w7kdsljoe1yq" path="res://Assets/sprites/smalldragon/Hurt2.png" id="9_ngyra"]
+[ext_resource type="Texture2D" uid="uid://dhfu3cnh60evj" path="res://Assets/sprites/smalldragon/Idle1.png" id="10_lg8af"]
+[ext_resource type="Texture2D" uid="uid://rsvrubx55brj" path="res://Assets/sprites/smalldragon/Idle2.png" id="11_s8yq4"]
+[ext_resource type="Texture2D" uid="uid://bw5j66l6ftwup" path="res://Assets/sprites/smalldragon/Idle3.png" id="12_i2r41"]
+[ext_resource type="Texture2D" uid="uid://vrky35g7aoes" path="res://Assets/sprites/smalldragon/Walk1.png" id="13_ul117"]
+[ext_resource type="Texture2D" uid="uid://cnvlu3jskchis" path="res://Assets/sprites/smalldragon/Walk2.png" id="14_5qqs8"]
+[ext_resource type="Texture2D" uid="uid://c816bcnb8mq72" path="res://Assets/sprites/smalldragon/Walk3.png" id="15_03jac"]
+[ext_resource type="Texture2D" uid="uid://00l4mb1du6f8" path="res://Assets/sprites/smalldragon/Walk4.png" id="16_cfjob"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q7av6"]
 atlas = ExtResource("1_gy5ho")
@@ -162,11 +161,11 @@ animations = [{
 height = 54.0
 
 [node name="SmallDragon" type="CharacterBody2D"]
-script = ExtResource("1_m6aps")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ohbda")
-animation = &"idle"
+animation = &"walk"
+frame_progress = 0.856909
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-8, 2)
