@@ -18,6 +18,7 @@ animations = [{
 radius = 6.0
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
+collision_layer = 2
 script = ExtResource("1_ij6vw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -25,5 +26,6 @@ position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_ij6vw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 3
 position = Vector2(0, -15)
 shape = SubResource("CapsuleShape2D_ghijl")
