@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhfp8c54v3r62"]
+
+[ext_resource type="AudioStream" uid="uid://k8u7e41xp876" path="res://Assets/audio/deep-sea-exploration-7399.mp3" id="1_g5bku"]
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_g5bku")
+autoplay = true
+max_distance = 2919.0
+bus = &"New Bus"

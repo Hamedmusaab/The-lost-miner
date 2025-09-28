@@ -56,41 +56,59 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_h76q8")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 139.0
-offset_top = 244.0
-offset_right = 234.0
-offset_bottom = 272.0
-theme_override_font_sizes/font_size = 20
-text = "BAHASAN"
+offset_left = 75.0
+offset_top = 251.0
+offset_right = 327.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 30
+text = "Muaadh Bahasan"
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 125.0
-offset_top = 135.0
-offset_right = 251.0
-offset_bottom = 190.0
+offset_left = 91.0
+offset_top = 136.0
+offset_right = 313.0
+offset_bottom = 191.0
 theme_override_font_sizes/font_size = 40
-text = "design"
+text = "Map Design"
 
 [node name="Label3" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 841.0
+offset_top = 241.0
+offset_right = 1070.0
+offset_bottom = 283.0
+theme_override_font_sizes/font_size = 30
+text = "Hamed musaab"
 
 [node name="Label4" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 804.0
+offset_top = 130.0
+offset_right = 1115.0
+offset_bottom = 185.0
+theme_override_font_sizes/font_size = 40
+text = "Enemies/Bosses"
 
 [node name="Label5" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 471.0
+offset_top = 248.0
+offset_right = 689.0
+offset_bottom = 290.0
+theme_override_font_sizes/font_size = 30
+text = "NourEldin tony"
 
 [node name="Label6" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 451.0
+offset_top = 109.0
+offset_right = 677.0
+offset_bottom = 205.0
+theme_override_font_sizes/font_size = 40
+text = "Player"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Back" type="Button" parent="."]
 layout_mode = 1

@@ -15,6 +15,15 @@ run/main_scene="uid://cmv3bsew3ppf0"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://Assets/audio/default_bus_layout.tres"
+
+[autoload]
+
+Global="*res://Assets/script/global.gd"
+AudioStreamPlayer2d3="*res://Assets/scenes/audio_stream_player_2d_3.tscn"
+
 [global_group]
 
 player=""
